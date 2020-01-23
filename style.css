@@ -1,0 +1,48 @@
+div#searchBox {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 0px;
+    align-content: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+body{
+   font-family:ABeeZee;
+}
+
+div#searchBox input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+width : 100%;
+
+margin-left:auto;
+margin-right:auto;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    border: 1px solid #ddd;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2%;
+}
+.card img{
+	border-radius:8%;
+	height:95%;
+	margin-top:auto;
+	margin-bottom:auto;
+	
+
+}
+.card:hover{
+    background-color:aqua;
+}
+.container {
+    padding:2px 16px;
+    
+}
