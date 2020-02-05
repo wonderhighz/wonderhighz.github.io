@@ -1,61 +1,37 @@
-<doctype! html>
-    <html>
+<!Doctype html>
+<html>
 
-    <head>
-        <title>Artist Directory</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel='stylesheet' href="https://fonts.googleapis.com/css?family=ABeeZee">
-    </head>
+<head>
+    <script type="text/javascript" src="myScript.js"></script>
 
-    <body>
+    <title>Artist Directory</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel='stylesheet' href="https://fonts.googleapis.com/css?family=ABeeZee">
 
-        <div id="searchBox">
-            <h1>Artist Directory</h1>
-            <input type="text">
+</head>
+
+<body>
+    <div id="searchBox">
+        <h1>Artist Directory</h1>
+        <input type="text">
+        <div class="dropdown">
+            <button onclick="show_hide()" class="dropbtn">Add artist</button>
         </div>
-
-        <div class="card">
-            <img src="https://randomuser.me/api/portraits/med/women/1.jpg" alt="Hillary Hewitt">
-            <div class="container">
-                <h4><b>Hillary Hewitt</b></h4>
-                <p>New York University</p>
-            </div>
-
+    </div>
+    <div id="inputBox">
+        <div style="display:none" ; id="drop-content">
+            <form id="myForm">
+                <input type="text" id="aName" placeholder="Artist Name" maxlength="40"></br>
+                <input type="text" id="aAbout" placeholder="About artist" maxlength="40"></br>
+                <input type="text" id="aUrl" placeholder="Image url"></br>
+            </form>
+            <button onclick="addArtists()">Add</button>
         </div>
-        <div class="card">
-            <img src="https://randomuser.me/api/portraits/med/women/2.jpg" alt="Cillary Heitt">
-            <div class="container">
-                <h4><b>Cillary Heitt</b></h4>
-                <p>Royal Academy of Painting and Sculpture</p>
-            </div>
-
+    </div>
+    <div id="card">
+        <div id="card_container">
         </div>
-        <div class="card">
-            <img src="https://randomuser.me/api/portraits/med/women/3.jpg" alt="Aillary Dewitt">
-            <div class="container">
-                <h4><b>Aillary Dewitt</b></h4>
-                <p>Artist to Watch in 2020</p>
-            </div>
+    </div>
+</body>
 
-        </div>
-        <div class="card">
-            <img src="https://randomuser.me/api/portraits/med/men/1.jpg" alt="Billary tt">
-            <div class="container">
-                <h4><b>Billary tt</b></h4>
-                <p>BCIT</p>
-            </div>
-
-        </div>
-        <div class="card">
-            <img src="https://randomuser.me/api/portraits/med/women/4.jpg" alt="Dillary Hewitt">
-            <div class="container">
-                <h4><b>Dillary Hewitt</b></h4>
-                <p>Sculpture</p>
-            </div>
-
-        </div>
-
-
-    </body>
-
-    </html>
+</html>
