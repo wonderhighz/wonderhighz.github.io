@@ -10,11 +10,21 @@ div#searchBox {
 body{
    font-family:ABeeZee;
 }
+div#searchContainer{
+    display:flex;
+    flex-direction:end;
+}
 .dropdown {
-    position: relative;
-    display: inline-block;
+    display: flex;
+    flex-direction:end;
+padding:8px;
   }
+.searchBtn{
+    display:flex;
+    flex-direction: end;
+    padding:8px;
 
+}
 div#drop-content{
     display:none;
   

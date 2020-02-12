@@ -13,10 +13,14 @@
 <body>
     <div id="searchBox">
         <h1>Artist Directory</h1>
-        <input type="text">
+        <div id = "searchContainer">
+        <input type="text" id="myInput" >
         <div class="dropdown">
-            <button onclick="show_hide()" class="dropbtn">Add artist</button>
+            <button onclick="show_hide()" class="dropbtn">Add</button>
         </div>
+        <div class="searchBtn"><button onclick="search()">Search</button></div>
+    
+</div>
     </div>
     <div id="inputBox">
         <div style="display:none" ; id="drop-content">
@@ -25,7 +29,7 @@
                 <input type="text" id="aAbout" placeholder="About artist" maxlength="40"></br>
                 <input type="text" id="aUrl" placeholder="Image url"></br>
             </form>
-            <button onclick="addArtists()">Add</button>
+            <button onclick="add()">Add</button>
         </div>
     </div>
     <div id="card">
